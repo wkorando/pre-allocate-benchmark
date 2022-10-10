@@ -1,0 +1,1455 @@
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapConstructor
+# Parameters: (addOnly = true, capacity = 10)
+
+# Run progress: 0.00% complete, ETA 00:24:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 70781.473 ns/op
+# Warmup Iteration   2: 67372.869 ns/op
+# Warmup Iteration   3: 70647.207 ns/op
+# Warmup Iteration   4: 68754.209 ns/op
+# Warmup Iteration   5: 68332.680 ns/op
+Iteration   1: 72295.761 ns/op
+Iteration   2: 69578.390 ns/op
+Iteration   3: 67489.500 ns/op
+Iteration   4: 72179.579 ns/op
+Iteration   5: 67532.363 ns/op
+
+# Run progress: 1.39% complete, ETA 00:24:15
+# Fork: 2 of 3
+# Warmup Iteration   1: 69587.891 ns/op
+# Warmup Iteration   2: 69816.490 ns/op
+# Warmup Iteration   3: 68744.834 ns/op
+# Warmup Iteration   4: 66339.574 ns/op
+# Warmup Iteration   5: 70844.442 ns/op
+Iteration   1: 67858.062 ns/op
+Iteration   2: 68835.216 ns/op
+Iteration   3: 70065.407 ns/op
+Iteration   4: 66228.873 ns/op
+Iteration   5: 71529.694 ns/op
+
+# Run progress: 2.78% complete, ETA 00:23:56
+# Fork: 3 of 3
+# Warmup Iteration   1: 80526.911 ns/op
+# Warmup Iteration   2: 68732.009 ns/op
+# Warmup Iteration   3: 68603.445 ns/op
+# Warmup Iteration   4: 80981.510 ns/op
+# Warmup Iteration   5: 68375.567 ns/op
+Iteration   1: 67782.741 ns/op
+Iteration   2: 104094.473 ns/op
+Iteration   3: 109739.314 ns/op
+Iteration   4: 105991.405 ns/op
+Iteration   5: 110696.072 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapConstructor":
+  79459.790 ±(99.9%) 18954.359 ns/op [Average]
+  (min, avg, max) = (66228.873, 79459.790, 110696.072), stdev = 17729.919
+  CI (99.9%): [60505.431, 98414.149] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapConstructor
+# Parameters: (addOnly = true, capacity = 100)
+
+# Run progress: 4.17% complete, ETA 00:23:35
+# Fork: 1 of 3
+# Warmup Iteration   1: 996072.784 ns/op
+# Warmup Iteration   2: 646972.604 ns/op
+# Warmup Iteration   3: 689945.572 ns/op
+# Warmup Iteration   4: 934272.504 ns/op
+# Warmup Iteration   5: 1126141.449 ns/op
+Iteration   1: 1096586.593 ns/op
+Iteration   2: 1066493.169 ns/op
+Iteration   3: 935229.237 ns/op
+Iteration   4: 861920.888 ns/op
+Iteration   5: 1061018.127 ns/op
+
+# Run progress: 5.56% complete, ETA 00:23:18
+# Fork: 2 of 3
+# Warmup Iteration   1: 1045213.297 ns/op
+# Warmup Iteration   2: 1088730.780 ns/op
+# Warmup Iteration   3: 1089867.830 ns/op
+# Warmup Iteration   4: 1095169.896 ns/op
+# Warmup Iteration   5: 1082421.201 ns/op
+Iteration   1: 872395.835 ns/op
+Iteration   2: 884070.001 ns/op
+Iteration   3: 1074103.933 ns/op
+Iteration   4: 1064238.684 ns/op
+Iteration   5: 1127959.503 ns/op
+
+# Run progress: 6.94% complete, ETA 00:23:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 1046489.895 ns/op
+# Warmup Iteration   2: 1087816.786 ns/op
+# Warmup Iteration   3: 1096364.549 ns/op
+# Warmup Iteration   4: 814804.910 ns/op
+# Warmup Iteration   5: 690537.160 ns/op
+Iteration   1: 691860.625 ns/op
+Iteration   2: 1079061.842 ns/op
+Iteration   3: 1070119.199 ns/op
+Iteration   4: 1101357.279 ns/op
+Iteration   5: 1074270.865 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapConstructor":
+  1004045.719 ±(99.9%) 133436.994 ns/op [Average]
+  (min, avg, max) = (691860.625, 1004045.719, 1127959.503), stdev = 124817.047
+  CI (99.9%): [870608.725, 1137482.713] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapConstructor
+# Parameters: (addOnly = true, capacity = 1000)
+
+# Run progress: 8.33% complete, ETA 00:22:38
+# Fork: 1 of 3
+# Warmup Iteration   1: 7028709.604 ns/op
+# Warmup Iteration   2: 6907954.072 ns/op
+# Warmup Iteration   3: 8414510.573 ns/op
+# Warmup Iteration   4: 11274109.659 ns/op
+# Warmup Iteration   5: 10070120.955 ns/op
+Iteration   1: 11302835.326 ns/op
+Iteration   2: 8222644.857 ns/op
+Iteration   3: 9623178.404 ns/op
+Iteration   4: 11002799.593 ns/op
+Iteration   5: 10717188.914 ns/op
+
+# Run progress: 9.72% complete, ETA 00:22:18
+# Fork: 2 of 3
+# Warmup Iteration   1: 10563466.216 ns/op
+# Warmup Iteration   2: 11146166.622 ns/op
+# Warmup Iteration   3: 10891847.527 ns/op
+# Warmup Iteration   4: 8843489.872 ns/op
+# Warmup Iteration   5: 9452382.563 ns/op
+Iteration   1: 10965228.272 ns/op
+Iteration   2: 10282604.990 ns/op
+Iteration   3: 10866022.973 ns/op
+Iteration   4: 10950468.454 ns/op
+Iteration   5: 10869892.716 ns/op
+
+# Run progress: 11.11% complete, ETA 00:21:58
+# Fork: 3 of 3
+# Warmup Iteration   1: 9156760.361 ns/op
+# Warmup Iteration   2: 8196088.619 ns/op
+# Warmup Iteration   3: 10951355.337 ns/op
+# Warmup Iteration   4: 10713298.401 ns/op
+# Warmup Iteration   5: 10411984.295 ns/op
+Iteration   1: 10964398.694 ns/op
+Iteration   2: 10989556.292 ns/op
+Iteration   3: 10266465.441 ns/op
+Iteration   4: 7589850.985 ns/op
+Iteration   5: 10737862.319 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapConstructor":
+  10356733.215 ±(99.9%) 1155823.380 ns/op [Average]
+  (min, avg, max) = (7589850.985, 10356733.215, 11302835.326), stdev = 1081157.907
+  CI (99.9%): [9200909.835, 11512556.595] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapConstructor
+# Parameters: (addOnly = false, capacity = 10)
+
+# Run progress: 12.50% complete, ETA 00:21:39
+# Fork: 1 of 3
+# Warmup Iteration   1: 164.641 ns/op
+# Warmup Iteration   2: 169.727 ns/op
+# Warmup Iteration   3: 165.802 ns/op
+# Warmup Iteration   4: 163.612 ns/op
+# Warmup Iteration   5: 165.332 ns/op
+Iteration   1: 162.819 ns/op
+Iteration   2: 163.288 ns/op
+Iteration   3: 164.714 ns/op
+Iteration   4: 162.000 ns/op
+Iteration   5: 162.764 ns/op
+
+# Run progress: 13.89% complete, ETA 00:21:16
+# Fork: 2 of 3
+# Warmup Iteration   1: 167.503 ns/op
+# Warmup Iteration   2: 175.235 ns/op
+# Warmup Iteration   3: 176.767 ns/op
+# Warmup Iteration   4: 174.856 ns/op
+# Warmup Iteration   5: 176.100 ns/op
+Iteration   1: 174.833 ns/op
+Iteration   2: 176.139 ns/op
+Iteration   3: 177.530 ns/op
+Iteration   4: 174.310 ns/op
+Iteration   5: 173.187 ns/op
+
+# Run progress: 15.28% complete, ETA 00:20:54
+# Fork: 3 of 3
+# Warmup Iteration   1: 164.264 ns/op
+# Warmup Iteration   2: 170.312 ns/op
+# Warmup Iteration   3: 165.934 ns/op
+# Warmup Iteration   4: 164.430 ns/op
+# Warmup Iteration   5: 165.740 ns/op
+Iteration   1: 164.597 ns/op
+Iteration   2: 164.851 ns/op
+Iteration   3: 163.750 ns/op
+Iteration   4: 165.466 ns/op
+Iteration   5: 165.135 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapConstructor":
+  167.692 ±(99.9%) 6.037 ns/op [Average]
+  (min, avg, max) = (162.000, 167.692, 177.530), stdev = 5.647
+  CI (99.9%): [161.655, 173.730] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapConstructor
+# Parameters: (addOnly = false, capacity = 100)
+
+# Run progress: 16.67% complete, ETA 00:20:32
+# Fork: 1 of 3
+# Warmup Iteration   1: 2158.395 ns/op
+# Warmup Iteration   2: 2071.096 ns/op
+# Warmup Iteration   3: 2030.251 ns/op
+# Warmup Iteration   4: 1968.777 ns/op
+# Warmup Iteration   5: 1968.477 ns/op
+Iteration   1: 1961.464 ns/op
+Iteration   2: 1953.475 ns/op
+Iteration   3: 2026.319 ns/op
+Iteration   4: 2034.216 ns/op
+Iteration   5: 2052.878 ns/op
+
+# Run progress: 18.06% complete, ETA 00:20:10
+# Fork: 2 of 3
+# Warmup Iteration   1: 2225.125 ns/op
+# Warmup Iteration   2: 2060.924 ns/op
+# Warmup Iteration   3: 2097.080 ns/op
+# Warmup Iteration   4: 2092.914 ns/op
+# Warmup Iteration   5: 2077.499 ns/op
+Iteration   1: 2066.947 ns/op
+Iteration   2: 2053.477 ns/op
+Iteration   3: 2048.777 ns/op
+Iteration   4: 2025.950 ns/op
+Iteration   5: 2062.476 ns/op
+
+# Run progress: 19.44% complete, ETA 00:19:49
+# Fork: 3 of 3
+# Warmup Iteration   1: 2239.096 ns/op
+# Warmup Iteration   2: 2074.884 ns/op
+# Warmup Iteration   3: 2017.418 ns/op
+# Warmup Iteration   4: 2000.359 ns/op
+# Warmup Iteration   5: 2013.298 ns/op
+Iteration   1: 2009.207 ns/op
+Iteration   2: 2027.543 ns/op
+Iteration   3: 1994.155 ns/op
+Iteration   4: 2010.953 ns/op
+Iteration   5: 2010.888 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapConstructor":
+  2022.582 ±(99.9%) 36.224 ns/op [Average]
+  (min, avg, max) = (1953.475, 2022.582, 2066.947), stdev = 33.884
+  CI (99.9%): [1986.358, 2058.806] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapConstructor
+# Parameters: (addOnly = false, capacity = 1000)
+
+# Run progress: 20.83% complete, ETA 00:19:28
+# Fork: 1 of 3
+# Warmup Iteration   1: 22136.272 ns/op
+# Warmup Iteration   2: 20449.777 ns/op
+# Warmup Iteration   3: 21563.660 ns/op
+# Warmup Iteration   4: 21690.507 ns/op
+# Warmup Iteration   5: 21791.089 ns/op
+Iteration   1: 21730.546 ns/op
+Iteration   2: 21521.752 ns/op
+Iteration   3: 21494.613 ns/op
+Iteration   4: 21409.419 ns/op
+Iteration   5: 21667.619 ns/op
+
+# Run progress: 22.22% complete, ETA 00:19:07
+# Fork: 2 of 3
+# Warmup Iteration   1: 22584.634 ns/op
+# Warmup Iteration   2: 21741.966 ns/op
+# Warmup Iteration   3: 21395.308 ns/op
+# Warmup Iteration   4: 21209.431 ns/op
+# Warmup Iteration   5: 21408.511 ns/op
+Iteration   1: 21245.724 ns/op
+Iteration   2: 21642.409 ns/op
+Iteration   3: 21516.916 ns/op
+Iteration   4: 21094.616 ns/op
+Iteration   5: 21301.055 ns/op
+
+# Run progress: 23.61% complete, ETA 00:18:45
+# Fork: 3 of 3
+# Warmup Iteration   1: 22762.884 ns/op
+# Warmup Iteration   2: 21503.029 ns/op
+# Warmup Iteration   3: 21565.285 ns/op
+# Warmup Iteration   4: 21456.387 ns/op
+# Warmup Iteration   5: 21492.044 ns/op
+Iteration   1: 21372.846 ns/op
+Iteration   2: 21375.317 ns/op
+Iteration   3: 21404.809 ns/op
+Iteration   4: 21382.423 ns/op
+Iteration   5: 21209.163 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapConstructor":
+  21424.615 ±(99.9%) 188.018 ns/op [Average]
+  (min, avg, max) = (21094.616, 21424.615, 21730.546), stdev = 175.872
+  CI (99.9%): [21236.597, 21612.634] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapFactory
+# Parameters: (addOnly = true, capacity = 10)
+
+# Run progress: 25.00% complete, ETA 00:18:25
+# Fork: 1 of 3
+# Warmup Iteration   1: 104456.763 ns/op
+# Warmup Iteration   2: 111665.053 ns/op
+# Warmup Iteration   3: 108704.799 ns/op
+# Warmup Iteration   4: 111273.845 ns/op
+# Warmup Iteration   5: 103098.945 ns/op
+Iteration   1: 116321.459 ns/op
+Iteration   2: 108843.157 ns/op
+Iteration   3: 112068.714 ns/op
+Iteration   4: 110076.193 ns/op
+Iteration   5: 108168.310 ns/op
+
+# Run progress: 26.39% complete, ETA 00:18:05
+# Fork: 2 of 3
+# Warmup Iteration   1: 107169.160 ns/op
+# Warmup Iteration   2: 112363.906 ns/op
+# Warmup Iteration   3: 114694.221 ns/op
+# Warmup Iteration   4: 111696.045 ns/op
+# Warmup Iteration   5: 111146.087 ns/op
+Iteration   1: 112294.510 ns/op
+Iteration   2: 112371.400 ns/op
+Iteration   3: 109245.925 ns/op
+Iteration   4: 108918.519 ns/op
+Iteration   5: 106259.145 ns/op
+
+# Run progress: 27.78% complete, ETA 00:17:44
+# Fork: 3 of 3
+# Warmup Iteration   1: 102369.778 ns/op
+# Warmup Iteration   2: 113231.545 ns/op
+# Warmup Iteration   3: 109716.249 ns/op
+# Warmup Iteration   4: 113459.248 ns/op
+# Warmup Iteration   5: 85342.505 ns/op
+Iteration   1: 109954.875 ns/op
+Iteration   2: 107720.169 ns/op
+Iteration   3: 112898.682 ns/op
+Iteration   4: 108789.342 ns/op
+Iteration   5: 119350.674 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapFactory":
+  110885.405 ±(99.9%) 3684.592 ns/op [Average]
+  (min, avg, max) = (106259.145, 110885.405, 119350.674), stdev = 3446.570
+  CI (99.9%): [107200.812, 114569.997] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapFactory
+# Parameters: (addOnly = true, capacity = 100)
+
+# Run progress: 29.17% complete, ETA 00:17:25
+# Fork: 1 of 3
+# Warmup Iteration   1: 1077844.198 ns/op
+# Warmup Iteration   2: 977465.671 ns/op
+# Warmup Iteration   3: 704166.080 ns/op
+# Warmup Iteration   4: 864156.426 ns/op
+# Warmup Iteration   5: 1130302.320 ns/op
+Iteration   1: 1144560.750 ns/op
+Iteration   2: 1098555.089 ns/op
+Iteration   3: 1109949.184 ns/op
+Iteration   4: 1107770.016 ns/op
+Iteration   5: 1143551.550 ns/op
+
+# Run progress: 30.56% complete, ETA 00:17:05
+# Fork: 2 of 3
+# Warmup Iteration   1: 792968.152 ns/op
+# Warmup Iteration   2: 856658.848 ns/op
+# Warmup Iteration   3: 1147823.746 ns/op
+# Warmup Iteration   4: 1107804.857 ns/op
+# Warmup Iteration   5: 1186886.292 ns/op
+Iteration   1: 1106146.533 ns/op
+Iteration   2: 1089140.892 ns/op
+Iteration   3: 1099786.175 ns/op
+Iteration   4: 874966.243 ns/op
+Iteration   5: 1139212.862 ns/op
+
+# Run progress: 31.94% complete, ETA 00:16:45
+# Fork: 3 of 3
+# Warmup Iteration   1: 1057353.901 ns/op
+# Warmup Iteration   2: 1117270.793 ns/op
+# Warmup Iteration   3: 1023972.987 ns/op
+# Warmup Iteration   4: 1121498.338 ns/op
+# Warmup Iteration   5: 1105171.506 ns/op
+Iteration   1: 1058956.377 ns/op
+Iteration   2: 887765.374 ns/op
+Iteration   3: 1085045.278 ns/op
+Iteration   4: 1105708.691 ns/op
+Iteration   5: 1102764.877 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapFactory":
+  1076925.326 ±(99.9%) 88241.605 ns/op [Average]
+  (min, avg, max) = (874966.243, 1076925.326, 1144560.750), stdev = 82541.252
+  CI (99.9%): [988683.721, 1165166.931] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapFactory
+# Parameters: (addOnly = true, capacity = 1000)
+
+# Run progress: 33.33% complete, ETA 00:16:25
+# Fork: 1 of 3
+# Warmup Iteration   1: 10756001.574 ns/op
+# Warmup Iteration   2: 10936075.630 ns/op
+# Warmup Iteration   3: 11250912.302 ns/op
+# Warmup Iteration   4: 10948376.277 ns/op
+# Warmup Iteration   5: 7114798.557 ns/op
+Iteration   1: 7021457.502 ns/op
+Iteration   2: 11075505.060 ns/op
+Iteration   3: 11027865.516 ns/op
+Iteration   4: 11101360.072 ns/op
+Iteration   5: 11188858.743 ns/op
+
+# Run progress: 34.72% complete, ETA 00:16:05
+# Fork: 2 of 3
+# Warmup Iteration   1: 9046839.099 ns/op
+# Warmup Iteration   2: 7079257.853 ns/op
+# Warmup Iteration   3: 8179406.906 ns/op
+# Warmup Iteration   4: 11427424.085 ns/op
+# Warmup Iteration   5: 11279934.313 ns/op
+Iteration   1: 10714816.348 ns/op
+Iteration   2: 11150311.508 ns/op
+Iteration   3: 9941153.569 ns/op
+Iteration   4: 10850132.670 ns/op
+Iteration   5: 11081448.780 ns/op
+
+# Run progress: 36.11% complete, ETA 00:15:44
+# Fork: 3 of 3
+# Warmup Iteration   1: 10972903.772 ns/op
+# Warmup Iteration   2: 11303359.128 ns/op
+# Warmup Iteration   3: 11246454.117 ns/op
+# Warmup Iteration   4: 11074064.403 ns/op
+# Warmup Iteration   5: 11314116.051 ns/op
+Iteration   1: 10159657.591 ns/op
+Iteration   2: 10844638.838 ns/op
+Iteration   3: 11254844.961 ns/op
+Iteration   4: 11256376.197 ns/op
+Iteration   5: 10999452.533 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapFactory":
+  10644525.326 ±(99.9%) 1146473.524 ns/op [Average]
+  (min, avg, max) = (7021457.502, 10644525.326, 11256376.197), stdev = 1072412.046
+  CI (99.9%): [9498051.801, 11790998.850] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapFactory
+# Parameters: (addOnly = false, capacity = 10)
+
+# Run progress: 37.50% complete, ETA 00:15:23
+# Fork: 1 of 3
+# Warmup Iteration   1: 174.166 ns/op
+# Warmup Iteration   2: 171.246 ns/op
+# Warmup Iteration   3: 170.088 ns/op
+# Warmup Iteration   4: 168.353 ns/op
+# Warmup Iteration   5: 168.953 ns/op
+Iteration   1: 166.934 ns/op
+Iteration   2: 169.449 ns/op
+Iteration   3: 166.389 ns/op
+Iteration   4: 164.311 ns/op
+Iteration   5: 168.409 ns/op
+
+# Run progress: 38.89% complete, ETA 00:15:02
+# Fork: 2 of 3
+# Warmup Iteration   1: 164.843 ns/op
+# Warmup Iteration   2: 163.275 ns/op
+# Warmup Iteration   3: 164.316 ns/op
+# Warmup Iteration   4: 164.823 ns/op
+# Warmup Iteration   5: 163.783 ns/op
+Iteration   1: 163.071 ns/op
+Iteration   2: 162.437 ns/op
+Iteration   3: 163.592 ns/op
+Iteration   4: 163.284 ns/op
+Iteration   5: 162.460 ns/op
+
+# Run progress: 40.28% complete, ETA 00:14:42
+# Fork: 3 of 3
+# Warmup Iteration   1: 170.329 ns/op
+# Warmup Iteration   2: 166.356 ns/op
+# Warmup Iteration   3: 167.439 ns/op
+# Warmup Iteration   4: 167.267 ns/op
+# Warmup Iteration   5: 167.681 ns/op
+Iteration   1: 168.577 ns/op
+Iteration   2: 174.395 ns/op
+Iteration   3: 172.129 ns/op
+Iteration   4: 172.410 ns/op
+Iteration   5: 170.525 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapFactory":
+  167.225 ±(99.9%) 4.260 ns/op [Average]
+  (min, avg, max) = (162.437, 167.225, 174.395), stdev = 3.985
+  CI (99.9%): [162.965, 171.485] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapFactory
+# Parameters: (addOnly = false, capacity = 100)
+
+# Run progress: 41.67% complete, ETA 00:14:21
+# Fork: 1 of 3
+# Warmup Iteration   1: 1761.406 ns/op
+# Warmup Iteration   2: 1674.394 ns/op
+# Warmup Iteration   3: 1757.518 ns/op
+# Warmup Iteration   4: 1741.316 ns/op
+# Warmup Iteration   5: 1788.992 ns/op
+Iteration   1: 1769.532 ns/op
+Iteration   2: 1751.213 ns/op
+Iteration   3: 1750.075 ns/op
+Iteration   4: 1745.887 ns/op
+Iteration   5: 1746.794 ns/op
+
+# Run progress: 43.06% complete, ETA 00:14:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 1765.342 ns/op
+# Warmup Iteration   2: 1673.169 ns/op
+# Warmup Iteration   3: 1813.704 ns/op
+# Warmup Iteration   4: 1772.853 ns/op
+# Warmup Iteration   5: 1770.350 ns/op
+Iteration   1: 1784.524 ns/op
+Iteration   2: 1785.235 ns/op
+Iteration   3: 1803.816 ns/op
+Iteration   4: 1803.603 ns/op
+Iteration   5: 1805.395 ns/op
+
+# Run progress: 44.44% complete, ETA 00:13:39
+# Fork: 3 of 3
+# Warmup Iteration   1: 1852.731 ns/op
+# Warmup Iteration   2: 1699.604 ns/op
+# Warmup Iteration   3: 1787.847 ns/op
+# Warmup Iteration   4: 1782.982 ns/op
+# Warmup Iteration   5: 1781.285 ns/op
+Iteration   1: 1784.799 ns/op
+Iteration   2: 1800.357 ns/op
+Iteration   3: 1774.230 ns/op
+Iteration   4: 1745.715 ns/op
+Iteration   5: 1748.956 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapFactory":
+  1773.342 ±(99.9%) 25.334 ns/op [Average]
+  (min, avg, max) = (1745.715, 1773.342, 1805.395), stdev = 23.698
+  CI (99.9%): [1748.008, 1798.676] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashMapFactory
+# Parameters: (addOnly = false, capacity = 1000)
+
+# Run progress: 45.83% complete, ETA 00:13:19
+# Fork: 1 of 3
+# Warmup Iteration   1: 19581.463 ns/op
+# Warmup Iteration   2: 18806.432 ns/op
+# Warmup Iteration   3: 18207.461 ns/op
+# Warmup Iteration   4: 18332.044 ns/op
+# Warmup Iteration   5: 18481.379 ns/op
+Iteration   1: 18502.283 ns/op
+Iteration   2: 18399.483 ns/op
+Iteration   3: 18192.640 ns/op
+Iteration   4: 18394.706 ns/op
+Iteration   5: 18371.795 ns/op
+
+# Run progress: 47.22% complete, ETA 00:12:58
+# Fork: 2 of 3
+# Warmup Iteration   1: 20055.640 ns/op
+# Warmup Iteration   2: 19240.519 ns/op
+# Warmup Iteration   3: 19022.615 ns/op
+# Warmup Iteration   4: 18717.297 ns/op
+# Warmup Iteration   5: 18930.795 ns/op
+Iteration   1: 19086.478 ns/op
+Iteration   2: 19030.119 ns/op
+Iteration   3: 18931.953 ns/op
+Iteration   4: 18984.346 ns/op
+Iteration   5: 18982.861 ns/op
+
+# Run progress: 48.61% complete, ETA 00:12:37
+# Fork: 3 of 3
+# Warmup Iteration   1: 19952.837 ns/op
+# Warmup Iteration   2: 19269.468 ns/op
+# Warmup Iteration   3: 18947.031 ns/op
+# Warmup Iteration   4: 19048.670 ns/op
+# Warmup Iteration   5: 18758.511 ns/op
+Iteration   1: 18873.381 ns/op
+Iteration   2: 19056.968 ns/op
+Iteration   3: 19025.062 ns/op
+Iteration   4: 18951.871 ns/op
+Iteration   5: 19050.168 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashMapFactory":
+  18788.941 ±(99.9%) 337.015 ns/op [Average]
+  (min, avg, max) = (18192.640, 18788.941, 19086.478), stdev = 315.244
+  CI (99.9%): [18451.926, 19125.955] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetConstructor
+# Parameters: (addOnly = true, capacity = 10)
+
+# Run progress: 50.00% complete, ETA 00:12:17
+# Fork: 1 of 3
+# Warmup Iteration   1: 108390.126 ns/op
+# Warmup Iteration   2: 115768.630 ns/op
+# Warmup Iteration   3: 116965.819 ns/op
+# Warmup Iteration   4: 115204.942 ns/op
+# Warmup Iteration   5: 119845.294 ns/op
+Iteration   1: 112752.976 ns/op
+Iteration   2: 96352.846 ns/op
+Iteration   3: 72021.878 ns/op
+Iteration   4: 85477.563 ns/op
+Iteration   5: 111527.128 ns/op
+
+# Run progress: 51.39% complete, ETA 00:11:56
+# Fork: 2 of 3
+# Warmup Iteration   1: 104595.649 ns/op
+# Warmup Iteration   2: 116770.613 ns/op
+# Warmup Iteration   3: 116718.504 ns/op
+# Warmup Iteration   4: 112431.608 ns/op
+# Warmup Iteration   5: 112782.113 ns/op
+Iteration   1: 113627.642 ns/op
+Iteration   2: 113697.821 ns/op
+Iteration   3: 113808.720 ns/op
+Iteration   4: 115814.703 ns/op
+Iteration   5: 126566.229 ns/op
+
+# Run progress: 52.78% complete, ETA 00:11:36
+# Fork: 3 of 3
+# Warmup Iteration   1: 130156.593 ns/op
+# Warmup Iteration   2: 145980.632 ns/op
+# Warmup Iteration   3: 133608.298 ns/op
+# Warmup Iteration   4: 132569.672 ns/op
+# Warmup Iteration   5: 135386.580 ns/op
+Iteration   1: 84021.305 ns/op
+Iteration   2: 115780.241 ns/op
+Iteration   3: 117483.892 ns/op
+Iteration   4: 112885.249 ns/op
+Iteration   5: 117062.241 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetConstructor":
+  107258.696 ±(99.9%) 16411.350 ns/op [Average]
+  (min, avg, max) = (72021.878, 107258.696, 126566.229), stdev = 15351.187
+  CI (99.9%): [90847.345, 123670.046] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetConstructor
+# Parameters: (addOnly = true, capacity = 100)
+
+# Run progress: 54.17% complete, ETA 00:11:16
+# Fork: 1 of 3
+# Warmup Iteration   1: 1143985.112 ns/op
+# Warmup Iteration   2: 1179691.871 ns/op
+# Warmup Iteration   3: 1161829.966 ns/op
+# Warmup Iteration   4: 1172694.531 ns/op
+# Warmup Iteration   5: 1069224.831 ns/op
+Iteration   1: 1141115.815 ns/op
+Iteration   2: 1140222.691 ns/op
+Iteration   3: 1115993.096 ns/op
+Iteration   4: 1123949.416 ns/op
+Iteration   5: 1120044.440 ns/op
+
+# Run progress: 55.56% complete, ETA 00:10:56
+# Fork: 2 of 3
+# Warmup Iteration   1: 1100766.219 ns/op
+# Warmup Iteration   2: 1162988.821 ns/op
+# Warmup Iteration   3: 1120180.200 ns/op
+# Warmup Iteration   4: 1138586.412 ns/op
+# Warmup Iteration   5: 706019.179 ns/op
+Iteration   1: 690522.667 ns/op
+Iteration   2: 693411.389 ns/op
+Iteration   3: 825691.251 ns/op
+Iteration   4: 1136959.796 ns/op
+Iteration   5: 1156317.236 ns/op
+
+# Run progress: 56.94% complete, ETA 00:10:35
+# Fork: 3 of 3
+# Warmup Iteration   1: 1103053.361 ns/op
+# Warmup Iteration   2: 1131726.740 ns/op
+# Warmup Iteration   3: 1133989.198 ns/op
+# Warmup Iteration   4: 1155177.538 ns/op
+# Warmup Iteration   5: 1129013.028 ns/op
+Iteration   1: 1167777.108 ns/op
+Iteration   2: 1104740.149 ns/op
+Iteration   3: 1118693.268 ns/op
+Iteration   4: 1123488.964 ns/op
+Iteration   5: 1097684.681 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetConstructor":
+  1050440.798 ±(99.9%) 177511.319 ns/op [Average]
+  (min, avg, max) = (690522.667, 1050440.798, 1167777.108), stdev = 166044.198
+  CI (99.9%): [872929.479, 1227952.117] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetConstructor
+# Parameters: (addOnly = true, capacity = 1000)
+
+# Run progress: 58.33% complete, ETA 00:10:15
+# Fork: 1 of 3
+# Warmup Iteration   1: 8608695.996 ns/op
+# Warmup Iteration   2: 7175831.464 ns/op
+# Warmup Iteration   3: 7130155.623 ns/op
+# Warmup Iteration   4: 11338253.802 ns/op
+# Warmup Iteration   5: 11966417.405 ns/op
+Iteration   1: 12111840.575 ns/op
+Iteration   2: 11970524.399 ns/op
+Iteration   3: 11531214.701 ns/op
+Iteration   4: 14741288.941 ns/op
+Iteration   5: 15224679.120 ns/op
+
+# Run progress: 59.72% complete, ETA 00:09:54
+# Fork: 2 of 3
+# Warmup Iteration   1: 12683281.292 ns/op
+# Warmup Iteration   2: 11739506.912 ns/op
+# Warmup Iteration   3: 12319383.476 ns/op
+# Warmup Iteration   4: 11778365.636 ns/op
+# Warmup Iteration   5: 12056128.156 ns/op
+Iteration   1: 12240320.165 ns/op
+Iteration   2: 11872581.901 ns/op
+Iteration   3: 11649626.581 ns/op
+Iteration   4: 11978851.845 ns/op
+Iteration   5: 9508912.384 ns/op
+
+# Run progress: 61.11% complete, ETA 00:09:34
+# Fork: 3 of 3
+# Warmup Iteration   1: 11010039.890 ns/op
+# Warmup Iteration   2: 11915862.012 ns/op
+# Warmup Iteration   3: 12011735.458 ns/op
+# Warmup Iteration   4: 11785439.116 ns/op
+# Warmup Iteration   5: 12099484.381 ns/op
+Iteration   1: 11858117.710 ns/op
+Iteration   2: 11825855.304 ns/op
+Iteration   3: 10896009.293 ns/op
+Iteration   4: 11797552.447 ns/op
+Iteration   5: 11718014.491 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetConstructor":
+  12061692.657 ±(99.9%) 1453566.924 ns/op [Average]
+  (min, avg, max) = (9508912.384, 12061692.657, 15224679.120), stdev = 1359667.402
+  CI (99.9%): [10608125.734, 13515259.581] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetConstructor
+# Parameters: (addOnly = false, capacity = 10)
+
+# Run progress: 62.50% complete, ETA 00:09:13
+# Fork: 1 of 3
+# Warmup Iteration   1: 218.087 ns/op
+# Warmup Iteration   2: 210.408 ns/op
+# Warmup Iteration   3: 214.228 ns/op
+# Warmup Iteration   4: 213.361 ns/op
+# Warmup Iteration   5: 217.197 ns/op
+Iteration   1: 211.513 ns/op
+Iteration   2: 212.485 ns/op
+Iteration   3: 209.107 ns/op
+Iteration   4: 215.673 ns/op
+Iteration   5: 212.051 ns/op
+
+# Run progress: 63.89% complete, ETA 00:08:53
+# Fork: 2 of 3
+# Warmup Iteration   1: 214.272 ns/op
+# Warmup Iteration   2: 210.764 ns/op
+# Warmup Iteration   3: 213.627 ns/op
+# Warmup Iteration   4: 215.724 ns/op
+# Warmup Iteration   5: 213.266 ns/op
+Iteration   1: 210.878 ns/op
+Iteration   2: 209.478 ns/op
+Iteration   3: 209.105 ns/op
+Iteration   4: 209.952 ns/op
+Iteration   5: 208.634 ns/op
+
+# Run progress: 65.28% complete, ETA 00:08:32
+# Fork: 3 of 3
+# Warmup Iteration   1: 211.395 ns/op
+# Warmup Iteration   2: 212.429 ns/op
+# Warmup Iteration   3: 209.284 ns/op
+# Warmup Iteration   4: 212.843 ns/op
+# Warmup Iteration   5: 212.717 ns/op
+Iteration   1: 212.771 ns/op
+Iteration   2: 211.078 ns/op
+Iteration   3: 211.701 ns/op
+Iteration   4: 212.797 ns/op
+Iteration   5: 213.180 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetConstructor":
+  211.360 ±(99.9%) 2.046 ns/op [Average]
+  (min, avg, max) = (208.634, 211.360, 215.673), stdev = 1.914
+  CI (99.9%): [209.314, 213.406] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetConstructor
+# Parameters: (addOnly = false, capacity = 100)
+
+# Run progress: 66.67% complete, ETA 00:08:12
+# Fork: 1 of 3
+# Warmup Iteration   1: 2826.732 ns/op
+# Warmup Iteration   2: 2623.212 ns/op
+# Warmup Iteration   3: 2607.360 ns/op
+# Warmup Iteration   4: 2590.608 ns/op
+# Warmup Iteration   5: 2585.744 ns/op
+Iteration   1: 2568.814 ns/op
+Iteration   2: 2585.889 ns/op
+Iteration   3: 2600.392 ns/op
+Iteration   4: 2618.583 ns/op
+Iteration   5: 2623.348 ns/op
+
+# Run progress: 68.06% complete, ETA 00:07:51
+# Fork: 2 of 3
+# Warmup Iteration   1: 2837.043 ns/op
+# Warmup Iteration   2: 2640.840 ns/op
+# Warmup Iteration   3: 2587.263 ns/op
+# Warmup Iteration   4: 2582.462 ns/op
+# Warmup Iteration   5: 2602.824 ns/op
+Iteration   1: 2599.296 ns/op
+Iteration   2: 2633.810 ns/op
+Iteration   3: 2611.832 ns/op
+Iteration   4: 2586.401 ns/op
+Iteration   5: 2610.460 ns/op
+
+# Run progress: 69.44% complete, ETA 00:07:30
+# Fork: 3 of 3
+# Warmup Iteration   1: 2809.222 ns/op
+# Warmup Iteration   2: 2609.499 ns/op
+# Warmup Iteration   3: 2596.731 ns/op
+# Warmup Iteration   4: 2597.010 ns/op
+# Warmup Iteration   5: 2561.413 ns/op
+Iteration   1: 2571.198 ns/op
+Iteration   2: 2574.981 ns/op
+Iteration   3: 2596.155 ns/op
+Iteration   4: 2590.265 ns/op
+Iteration   5: 2584.009 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetConstructor":
+  2597.029 ±(99.9%) 20.857 ns/op [Average]
+  (min, avg, max) = (2568.814, 2597.029, 2633.810), stdev = 19.509
+  CI (99.9%): [2576.172, 2617.886] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetConstructor
+# Parameters: (addOnly = false, capacity = 1000)
+
+# Run progress: 70.83% complete, ETA 00:07:10
+# Fork: 1 of 3
+# Warmup Iteration   1: 31130.993 ns/op
+# Warmup Iteration   2: 28775.932 ns/op
+# Warmup Iteration   3: 29224.232 ns/op
+# Warmup Iteration   4: 28929.473 ns/op
+# Warmup Iteration   5: 28917.280 ns/op
+Iteration   1: 29009.651 ns/op
+Iteration   2: 29043.754 ns/op
+Iteration   3: 29502.266 ns/op
+Iteration   4: 29895.009 ns/op
+Iteration   5: 29797.978 ns/op
+
+# Run progress: 72.22% complete, ETA 00:06:49
+# Fork: 2 of 3
+# Warmup Iteration   1: 32009.220 ns/op
+# Warmup Iteration   2: 29577.801 ns/op
+# Warmup Iteration   3: 29408.171 ns/op
+# Warmup Iteration   4: 29707.002 ns/op
+# Warmup Iteration   5: 29730.292 ns/op
+Iteration   1: 29484.301 ns/op
+Iteration   2: 29430.146 ns/op
+Iteration   3: 29552.234 ns/op
+Iteration   4: 29910.577 ns/op
+Iteration   5: 30435.068 ns/op
+
+# Run progress: 73.61% complete, ETA 00:06:29
+# Fork: 3 of 3
+# Warmup Iteration   1: 33371.075 ns/op
+# Warmup Iteration   2: 31237.701 ns/op
+# Warmup Iteration   3: 31366.020 ns/op
+# Warmup Iteration   4: 31500.636 ns/op
+# Warmup Iteration   5: 31697.980 ns/op
+Iteration   1: 31221.954 ns/op
+Iteration   2: 31417.226 ns/op
+Iteration   3: 31529.949 ns/op
+Iteration   4: 31930.695 ns/op
+Iteration   5: 32111.626 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetConstructor":
+  30284.829 ±(99.9%) 1142.706 ns/op [Average]
+  (min, avg, max) = (29009.651, 30284.829, 32111.626), stdev = 1068.888
+  CI (99.9%): [29142.123, 31427.535] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetFactory
+# Parameters: (addOnly = true, capacity = 10)
+
+# Run progress: 75.00% complete, ETA 00:06:08
+# Fork: 1 of 3
+# Warmup Iteration   1: 111042.030 ns/op
+# Warmup Iteration   2: 116742.211 ns/op
+# Warmup Iteration   3: 110043.867 ns/op
+# Warmup Iteration   4: 120534.422 ns/op
+# Warmup Iteration   5: 120628.055 ns/op
+Iteration   1: 116155.634 ns/op
+Iteration   2: 116059.156 ns/op
+Iteration   3: 122183.414 ns/op
+Iteration   4: 88368.559 ns/op
+Iteration   5: 71685.275 ns/op
+
+# Run progress: 76.39% complete, ETA 00:05:48
+# Fork: 2 of 3
+# Warmup Iteration   1: 82222.300 ns/op
+# Warmup Iteration   2: 73524.345 ns/op
+# Warmup Iteration   3: 148677.239 ns/op
+# Warmup Iteration   4: 337115.830 ns/op
+# Warmup Iteration   5: 76476.895 ns/op
+Iteration   1: 111643.917 ns/op
+Iteration   2: 120350.807 ns/op
+Iteration   3: 119227.978 ns/op
+Iteration   4: 120255.411 ns/op
+Iteration   5: 115063.708 ns/op
+
+# Run progress: 77.78% complete, ETA 00:05:28
+# Fork: 3 of 3
+# Warmup Iteration   1: 112611.355 ns/op
+# Warmup Iteration   2: 128677.792 ns/op
+# Warmup Iteration   3: 120603.348 ns/op
+# Warmup Iteration   4: 121046.563 ns/op
+# Warmup Iteration   5: 119269.343 ns/op
+Iteration   1: 121024.457 ns/op
+Iteration   2: 79864.084 ns/op
+Iteration   3: 73595.293 ns/op
+Iteration   4: 74456.653 ns/op
+Iteration   5: 89570.573 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetFactory":
+  102633.661 ±(99.9%) 21583.666 ns/op [Average]
+  (min, avg, max) = (71685.275, 102633.661, 122183.414), stdev = 20189.374
+  CI (99.9%): [81049.996, 124217.327] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetFactory
+# Parameters: (addOnly = true, capacity = 100)
+
+# Run progress: 79.17% complete, ETA 00:05:07
+# Fork: 1 of 3
+# Warmup Iteration   1: 1105071.785 ns/op
+# Warmup Iteration   2: 1144397.226 ns/op
+# Warmup Iteration   3: 1178537.451 ns/op
+# Warmup Iteration   4: 1159545.507 ns/op
+# Warmup Iteration   5: 1135427.318 ns/op
+Iteration   1: 1137820.808 ns/op
+Iteration   2: 1177414.685 ns/op
+Iteration   3: 1105827.526 ns/op
+Iteration   4: 1116263.295 ns/op
+Iteration   5: 1113607.832 ns/op
+
+# Run progress: 80.56% complete, ETA 00:04:47
+# Fork: 2 of 3
+# Warmup Iteration   1: 1084574.055 ns/op
+# Warmup Iteration   2: 1144809.302 ns/op
+# Warmup Iteration   3: 1135595.596 ns/op
+# Warmup Iteration   4: 819816.057 ns/op
+# Warmup Iteration   5: 794102.455 ns/op
+Iteration   1: 1135582.222 ns/op
+Iteration   2: 1123279.260 ns/op
+Iteration   3: 1114248.617 ns/op
+Iteration   4: 1144704.846 ns/op
+Iteration   5: 1109037.984 ns/op
+
+# Run progress: 81.94% complete, ETA 00:04:26
+# Fork: 3 of 3
+# Warmup Iteration   1: 1128203.685 ns/op
+# Warmup Iteration   2: 1131431.619 ns/op
+# Warmup Iteration   3: 1142900.577 ns/op
+# Warmup Iteration   4: 1143451.565 ns/op
+# Warmup Iteration   5: 1126826.376 ns/op
+Iteration   1: 1133752.443 ns/op
+Iteration   2: 1106346.475 ns/op
+Iteration   3: 1113225.967 ns/op
+Iteration   4: 1167813.432 ns/op
+Iteration   5: 1143200.557 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetFactory":
+  1129475.063 ±(99.9%) 23536.710 ns/op [Average]
+  (min, avg, max) = (1105827.526, 1129475.063, 1177414.685), stdev = 22016.253
+  CI (99.9%): [1105938.353, 1153011.773] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetFactory
+# Parameters: (addOnly = true, capacity = 1000)
+
+# Run progress: 83.33% complete, ETA 00:04:06
+# Fork: 1 of 3
+# Warmup Iteration   1: 10821600.195 ns/op
+# Warmup Iteration   2: 8562321.624 ns/op
+# Warmup Iteration   3: 7239716.141 ns/op
+# Warmup Iteration   4: 7127286.434 ns/op
+# Warmup Iteration   5: 7154472.564 ns/op
+Iteration   1: 8912006.049 ns/op
+Iteration   2: 10996673.929 ns/op
+Iteration   3: 11382728.390 ns/op
+Iteration   4: 11230260.111 ns/op
+Iteration   5: 11081621.912 ns/op
+
+# Run progress: 84.72% complete, ETA 00:03:45
+# Fork: 2 of 3
+# Warmup Iteration   1: 10814274.500 ns/op
+# Warmup Iteration   2: 11464631.208 ns/op
+# Warmup Iteration   3: 11412885.185 ns/op
+# Warmup Iteration   4: 11336396.191 ns/op
+# Warmup Iteration   5: 11394460.893 ns/op
+Iteration   1: 10964437.262 ns/op
+Iteration   2: 11085193.945 ns/op
+Iteration   3: 10074555.940 ns/op
+Iteration   4: 6958002.190 ns/op
+Iteration   5: 7428940.077 ns/op
+
+# Run progress: 86.11% complete, ETA 00:03:25
+# Fork: 3 of 3
+# Warmup Iteration   1: 10852597.870 ns/op
+# Warmup Iteration   2: 11515460.138 ns/op
+# Warmup Iteration   3: 11597342.370 ns/op
+# Warmup Iteration   4: 11435701.040 ns/op
+# Warmup Iteration   5: 11483473.136 ns/op
+Iteration   1: 10726023.316 ns/op
+Iteration   2: 11341294.101 ns/op
+Iteration   3: 11647634.770 ns/op
+Iteration   4: 11779822.936 ns/op
+Iteration   5: 11516343.954 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetFactory":
+  10475035.925 ±(99.9%) 1613056.781 ns/op [Average]
+  (min, avg, max) = (6958002.190, 10475035.925, 11779822.936), stdev = 1508854.314
+  CI (99.9%): [8861979.145, 12088092.706] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetFactory
+# Parameters: (addOnly = false, capacity = 10)
+
+# Run progress: 87.50% complete, ETA 00:03:04
+# Fork: 1 of 3
+# Warmup Iteration   1: 221.830 ns/op
+# Warmup Iteration   2: 213.652 ns/op
+# Warmup Iteration   3: 213.692 ns/op
+# Warmup Iteration   4: 214.993 ns/op
+# Warmup Iteration   5: 233.358 ns/op
+Iteration   1: 218.661 ns/op
+Iteration   2: 221.399 ns/op
+Iteration   3: 221.649 ns/op
+Iteration   4: 228.339 ns/op
+Iteration   5: 229.382 ns/op
+
+# Run progress: 88.89% complete, ETA 00:02:44
+# Fork: 2 of 3
+# Warmup Iteration   1: 222.118 ns/op
+# Warmup Iteration   2: 267.407 ns/op
+# Warmup Iteration   3: 257.484 ns/op
+# Warmup Iteration   4: 215.440 ns/op
+# Warmup Iteration   5: 216.598 ns/op
+Iteration   1: 221.365 ns/op
+Iteration   2: 217.304 ns/op
+Iteration   3: 230.250 ns/op
+Iteration   4: 221.813 ns/op
+Iteration   5: 219.720 ns/op
+
+# Run progress: 90.28% complete, ETA 00:02:23
+# Fork: 3 of 3
+# Warmup Iteration   1: 216.267 ns/op
+# Warmup Iteration   2: 210.367 ns/op
+# Warmup Iteration   3: 213.867 ns/op
+# Warmup Iteration   4: 215.802 ns/op
+# Warmup Iteration   5: 215.884 ns/op
+Iteration   1: 212.713 ns/op
+Iteration   2: 218.961 ns/op
+Iteration   3: 219.700 ns/op
+Iteration   4: 222.335 ns/op
+Iteration   5: 216.026 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetFactory":
+  221.308 ±(99.9%) 5.202 ns/op [Average]
+  (min, avg, max) = (212.713, 221.308, 230.250), stdev = 4.866
+  CI (99.9%): [216.106, 226.509] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetFactory
+# Parameters: (addOnly = false, capacity = 100)
+
+# Run progress: 91.67% complete, ETA 00:02:03
+# Fork: 1 of 3
+# Warmup Iteration   1: 2398.967 ns/op
+# Warmup Iteration   2: 2243.819 ns/op
+# Warmup Iteration   3: 2329.913 ns/op
+# Warmup Iteration   4: 2307.138 ns/op
+# Warmup Iteration   5: 2225.215 ns/op
+Iteration   1: 2250.898 ns/op
+Iteration   2: 2270.669 ns/op
+Iteration   3: 2226.788 ns/op
+Iteration   4: 2287.940 ns/op
+Iteration   5: 2304.142 ns/op
+
+# Run progress: 93.06% complete, ETA 00:01:42
+# Fork: 2 of 3
+# Warmup Iteration   1: 2500.745 ns/op
+# Warmup Iteration   2: 2318.332 ns/op
+# Warmup Iteration   3: 2411.866 ns/op
+# Warmup Iteration   4: 2415.437 ns/op
+# Warmup Iteration   5: 2440.538 ns/op
+Iteration   1: 2335.456 ns/op
+Iteration   2: 2247.337 ns/op
+Iteration   3: 2224.509 ns/op
+Iteration   4: 2260.899 ns/op
+Iteration   5: 2327.529 ns/op
+
+# Run progress: 94.44% complete, ETA 00:01:21
+# Fork: 3 of 3
+# Warmup Iteration   1: 2590.479 ns/op
+# Warmup Iteration   2: 2241.064 ns/op
+# Warmup Iteration   3: 2256.299 ns/op
+# Warmup Iteration   4: 2320.297 ns/op
+# Warmup Iteration   5: 2303.484 ns/op
+Iteration   1: 2359.143 ns/op
+Iteration   2: 2323.025 ns/op
+Iteration   3: 2494.597 ns/op
+Iteration   4: 2250.550 ns/op
+Iteration   5: 2267.909 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetFactory":
+  2295.426 ±(99.9%) 73.329 ns/op [Average]
+  (min, avg, max) = (2224.509, 2295.426, 2494.597), stdev = 68.592
+  CI (99.9%): [2222.097, 2368.755] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+35-2237
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java
+# VM options: -Xmx2g -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.BenchmarkPreAllocated.testHashSetFactory
+# Parameters: (addOnly = false, capacity = 1000)
+
+# Run progress: 95.83% complete, ETA 00:01:01
+# Fork: 1 of 3
+# Warmup Iteration   1: 27330.788 ns/op
+# Warmup Iteration   2: 24759.858 ns/op
+# Warmup Iteration   3: 24978.028 ns/op
+# Warmup Iteration   4: 25705.361 ns/op
+# Warmup Iteration   5: 25710.921 ns/op
+Iteration   1: 27092.801 ns/op
+Iteration   2: 30637.449 ns/op
+Iteration   3: 28449.432 ns/op
+Iteration   4: 27894.920 ns/op
+Iteration   5: 30198.251 ns/op
+
+# Run progress: 97.22% complete, ETA 00:00:40
+# Fork: 2 of 3
+# Warmup Iteration   1: 28452.607 ns/op
+# Warmup Iteration   2: 25829.299 ns/op
+# Warmup Iteration   3: 25788.439 ns/op
+# Warmup Iteration   4: 26312.163 ns/op
+# Warmup Iteration   5: 26421.036 ns/op
+Iteration   1: 27849.283 ns/op
+Iteration   2: 25878.795 ns/op
+Iteration   3: 26597.651 ns/op
+Iteration   4: 26320.100 ns/op
+Iteration   5: 25700.069 ns/op
+
+# Run progress: 98.61% complete, ETA 00:00:20
+# Fork: 3 of 3
+# Warmup Iteration   1: 28132.913 ns/op
+# Warmup Iteration   2: 26846.177 ns/op
+# Warmup Iteration   3: 27093.066 ns/op
+# Warmup Iteration   4: 27209.186 ns/op
+# Warmup Iteration   5: 26470.896 ns/op
+Iteration   1: 26695.933 ns/op
+Iteration   2: 26916.808 ns/op
+Iteration   3: 27740.360 ns/op
+Iteration   4: 26541.846 ns/op
+Iteration   5: 27518.646 ns/op
+
+
+Result "org.sample.BenchmarkPreAllocated.testHashSetFactory":
+  27468.823 ±(99.9%) 1525.106 ns/op [Average]
+  (min, avg, max) = (25700.069, 27468.823, 30637.449), stdev = 1426.585
+  CI (99.9%): [25943.717, 28993.929] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:24:35
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                     (addOnly)  (capacity)  Mode  Cnt         Score         Error  Units
+BenchmarkPreAllocated.testHashMapConstructor      false          10  avgt   15     79459.790 ±   18954.359  ns/op
+BenchmarkPreAllocated.testHashMapFactory          false          10  avgt   15    110885.405 ±    3684.592  ns/op
+BenchmarkPreAllocated.testHashMapConstructor      false         100  avgt   15   1004045.719 ±  133436.994  ns/op
+BenchmarkPreAllocated.testHashMapFactory          false         100  avgt   15   1076925.326 ±   88241.605  ns/op
+BenchmarkPreAllocated.testHashMapConstructor      false        1000  avgt   15  10356733.215 ± 1155823.380  ns/op
+BenchmarkPreAllocated.testHashMapFactory          false        1000  avgt   15  10644525.326 ± 1146473.524  ns/op
+BenchmarkPreAllocated.testHashMapConstructor       true          10  avgt   15       167.692 ±       6.037  ns/op
+BenchmarkPreAllocated.testHashMapFactory           true          10  avgt   15       167.225 ±       4.260  ns/op
+BenchmarkPreAllocated.testHashMapConstructor       true         100  avgt   15      2022.582 ±      36.224  ns/op
+BenchmarkPreAllocated.testHashMapFactory           true         100  avgt   15      1773.342 ±      25.334  ns/op
+BenchmarkPreAllocated.testHashMapConstructor       true        1000  avgt   15     21424.615 ±     188.018  ns/op
+BenchmarkPreAllocated.testHashMapFactory           true        1000  avgt   15     18788.941 ±     337.015  ns/op
+BenchmarkPreAllocated.testHashSetConstructor      false          10  avgt   15    107258.696 ±   16411.350  ns/op
+BenchmarkPreAllocated.testHashSetFactory          false          10  avgt   15    102633.661 ±   21583.666  ns/op
+BenchmarkPreAllocated.testHashSetConstructor      false         100  avgt   15   1050440.798 ±  177511.319  ns/op
+BenchmarkPreAllocated.testHashSetFactory          false         100  avgt   15   1129475.063 ±   23536.710  ns/op
+BenchmarkPreAllocated.testHashSetConstructor      false        1000  avgt   15  12061692.657 ± 1453566.924  ns/op
+BenchmarkPreAllocated.testHashSetFactory          false        1000  avgt   15  10475035.925 ± 1613056.781  ns/op
+BenchmarkPreAllocated.testHashSetConstructor       true          10  avgt   15       211.360 ±       2.046  ns/op
+BenchmarkPreAllocated.testHashSetFactory           true          10  avgt   15       221.308 ±       5.202  ns/op
+BenchmarkPreAllocated.testHashSetConstructor       true         100  avgt   15      2597.029 ±      20.857  ns/op
+BenchmarkPreAllocated.testHashSetFactory           true         100  avgt   15      2295.426 ±      73.329  ns/op
+BenchmarkPreAllocated.testHashSetConstructor       true        1000  avgt   15     30284.829 ±    1142.706  ns/op
+BenchmarkPreAllocated.testHashSetFactory           true        1000  avgt   15     27468.823 ±    1525.106  ns/op

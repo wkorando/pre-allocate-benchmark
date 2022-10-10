@@ -1,0 +1,3 @@
+OS: macOS Montery (12.6)
+Processor: 2.6 GHz 6-Core Intel Core i7
+Memory: 32 GB 2667 MHz DDR4
