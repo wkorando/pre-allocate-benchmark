@@ -36,6 +36,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.random.RandomGenerator;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -54,77 +55,49 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
-@Warmup(iterations = 3, time = 1, timeUnit = TimeUnit.SECONDS)
-@Measurement(iterations = 3, time = 1, timeUnit = TimeUnit.SECONDS)
-@Fork(3)
+@Warmup(iterations = 8, time = 3, timeUnit = TimeUnit.SECONDS)
+@Measurement(iterations = 8, time = 3, timeUnit = TimeUnit.SECONDS)
+@Fork(6)
 @State(Scope.Benchmark)
 public class BenchmarkPreAllocated {
 
-//	@Param({ "10", "100", "1000" })
-	@Param({ "1000"})
-
+	@Param({ "10", "20", "30", "75", "100", "1000", "2000" })
 	public int capacity;
-
-//	@Param({ "false", "true" })
-	@Param({ "false"})
-	public boolean readFromCollection;
 
 	@Benchmark
 	public void testHashMapConstructor() {
-		String myString = "myString";
-		Map<Integer, String> mapOfStrings = new HashMap<>(capacity*2);
+		Map<Integer, Long> mapOfStrings = new HashMap<>(capacity);
 		for (int i = 0; i < capacity; i++) {
-			mapOfStrings.put(Integer.valueOf(i), myString + i);
-			if (readFromCollection) {
-				String value = mapOfStrings.get(Integer.valueOf(i));
-				System.out.println(value);
-			}
+			mapOfStrings.put(i, System.currentTimeMillis());
 		}
 	}
-	
+
 	@Benchmark
 	public void testHashMapFactory() {
-		String myString = "myString";
-        Map<Integer, String> mapOfStrings = HashMap.newHashMap(capacity);
+		Map<Integer, Long> mapOfStrings = HashMap.newHashMap(capacity);
 		for (int i = 0; i < capacity; i++) {
-			mapOfStrings.put(Integer.valueOf(i), myString + i);
-			if (readFromCollection) {
-				String value = mapOfStrings.get(Integer.valueOf(i));
-				System.out.println(value);
-			}
+			mapOfStrings.put(Integer.valueOf(i), System.currentTimeMillis());
 		}
 	}
-	
 
 	@Benchmark
 	public void testHashSetConstructor() {
-			String myString = "myString";
-		Set<String> mapOfStrings = new HashSet<>(capacity*2);
+		Set<Long> setOfStrings = new HashSet<>(capacity);
 		for (int i = 0; i < capacity; i++) {
-			mapOfStrings.add(myString + i);
-			if (readFromCollection) {
-				System.out.println(mapOfStrings.contains(myString + i));
-			}
-		}
-	}	
-	
-	@Benchmark
-	public void testHashSetFactory() {
-		String myString = "myString";
-		Set<String> mapOfStrings = HashSet.newHashSet(capacity);
-		for (int i = 0; i < capacity; i++) {
-			mapOfStrings.add(myString + i);
-			if (readFromCollection) {
-				System.out.println(mapOfStrings.contains(myString + i));
-			}
+			setOfStrings.add(System.currentTimeMillis());
 		}
 	}
 
-	
+	@Benchmark
+	public void testHashSetFactory() {
+		Set<Long> setOfStrings = HashSet.newHashSet(capacity);
+		for (int i = 0; i < capacity; i++) {
+			setOfStrings.add(System.currentTimeMillis());
+		}
+	}
 
 	public static void main(String[] args) throws RunnerException {
-		Options opt = new OptionsBuilder().include(BenchmarkPreAllocated.class.getSimpleName())
-				.build();
+		Options opt = new OptionsBuilder().include(BenchmarkPreAllocated.class.getSimpleName()).build();
 		new Runner(opt).run();
 	}
 }
